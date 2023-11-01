@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 70px;
+    background-color: rgb(201, 198, 198);
+    font-family: Barlow Semi Condensed;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr );
+    min-height: 100vh;
+    gap: 40px;
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    gap: 35px;
+    grid-column: 1/5;
+
+}
+.bottom{
+    display: grid;
+    grid-template-columns:repeat(15,1fr);
+    gap: 30px;
+    grid-column: 1/5;
+}
+.first{
+    display: grid;
+    grid-column: 1/10;
+    grid-gap: 35px;
+}
+.second{
+    grid-column: 10/-1;
+}
+.left-top-left{
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat:no-repeat;
+    background-position:right 100px top ;
+    border-radius: 10px;
+    padding: 25px;
+    grid-column: 1/11;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+.left-top-right{
+    border-radius: 10px;
+    padding: 25px;
+    grid-column: 11/-1;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.text-1{
+    color: hsl(0, 0%, 81%);
+}
+.text-2{
+    color: hsl(0, 0%, 81%);
+}
+.text-3{
+    color: hsl(0, 1%, 67%);
+}
+.text-4{
+    color: hsl(0, 1%, 72%);
+}
+.text-5{
+    color: hsl(0, 1%, 72%);
+}
+.left-bottom-right{
+    border-radius: 10px;
+    padding: 25px;
+    grid-column: 1/-11;
+    color: black;
+    background-color: white;
+}
+.left-bottom-left{
+    border-radius: 10px;
+    padding: 25px;
+    grid-column: -11/-1;
+    color: white;
+    background-color: hsl(219, 29%, 14%);
+}
+.right{
+    border-radius: 10px;
+    padding: 27px;
+    height: 100%;
+    background-color: white;
+}
+.Daniel{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+}
+.Daniel h2{
+    font-size: 5px;
+}
+.Daniel img{
+    border-radius: 27px;
+    width: 40px;
+    border: 2px solid white;
+}
+.dan-text p{
+    display: flex;
+    text-align: center;
+}
+.dan-text .p2 p{
+    color:hsl(0, 0%, 81%) ;
+}
+.Jonathan{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Jonathan img{
+    border-radius: 27px;
+    width: 40px;
+    border: 2px solid white;
+}
+.jon-text .p4 p{
+    color:hsl(0, 0%, 81%) ;
+}
+.Jeanette{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Jeanette img{
+    border-radius: 27px;
+    width: 40px;
+    border: 2px solid white;
+}
+.jean-text .p6 p{
+color:hsl(0, 1%, 72%)
+}
+.patrick{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.patrick img{
+    border-radius: 27px;
+    width: 40px;
+    border: 2px solid purple;
+}
+.pat-text .p8 p{
+    color:hsl(0, 0%, 81%) ;
+}
+.kira{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.kira img{
+    border-radius: 27px;
+    width: 40px;
+    border: 2px solid white;
+}
+.kira .p10 p{
+     color:hsl(0, 1%, 72%) ;
+}
+
+@media screen and (max-width:375px) {
+    .first .top{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: stretch;
+    }
+    .first .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .deny{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr );
+    min-height: 100vh;
+    gap: 0px;
+}
+    .container{
+        grid-template-columns: 1fr;
+        
+        padding: 0%;
+    }
+    body{
+        padding: 20px;
+        gap: 0px;
+        background-color: rgb(201, 198, 198);
+    }
+    .first{
+    display: grid;
+    grid-gap: 0px;
+}
+.top{
+    gap: 0px;
+}
+.bottom{
+    gap: 0px;
+}
+}
