@@ -201,3 +201,44 @@ color:hsl(0, 1%, 72%)
     gap: 0px;
 }
 }
+@media screen and (max-width:768px) {
+    .first .top{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: stretch;
+    }
+    .first .bottom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .deny{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr );
+    min-height: 100vh;
+    gap: 0px;
+}
+    .container{
+        grid-template-columns: 1fr;
+        
+        padding: 0%;
+    }
+    body{
+        padding: 20px;
+        gap: 0px;
+        background-color: rgb(201, 198, 198);
+    }
+    .first{
+    display: grid;
+    grid-gap: 0px;
+}
+.top{
+    gap: 0px;
+}
+.bottom{
+    gap: 0px;
+}
+}
